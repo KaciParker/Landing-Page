@@ -64,8 +64,8 @@ body, html {
     background-color:#282E34;
     text-align:center;
     padding:50px 80px;
-    text-align: justify;
     position:relative;
+    font-size: 20px;
   }
 
   .grid-style{
@@ -74,4 +74,10 @@ body, html {
     padding:50px 80px;
     position:relative;
     width: 100%;
+  }
+
+  .link-style{
+    font: 30px "Lato", sans-serif;
+    color: rgb(231, 231, 163);
+    text-align: center;
   }
