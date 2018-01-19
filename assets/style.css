@@ -4,7 +4,46 @@ body, html {
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
   }
+
+  .text {
+    font: 20px "Lato", sans-serif;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
   
+  /* CIRCLE BUTTON */
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+  /* BACKGROUND IMAGES */
+
   .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
@@ -18,6 +57,10 @@ body, html {
     background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb");
     min-height: 100%;
   }
+
+  .img-bot {
+    min-height: 1000px;
+  }
   
   .bgimg-2 {
     background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?dpr=1&auto=format&fit=crop&w=1050&q=60&cs=tinysrgb");
@@ -28,7 +71,11 @@ body, html {
     background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb");
     min-height: 400px;
   }
+
+  /*  */
   
+  /* IN BETWEEN SECTIONS */
+
   .caption {
     position: absolute;
     left: 0;
@@ -37,7 +84,21 @@ body, html {
     text-align: center;
     color: #000;
   }
-  
+
+  .caption-bottom {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+
   .caption span.border {
     background-color: #111;
     color: #fff;
@@ -45,20 +106,22 @@ body, html {
     font-size: 50px;
     letter-spacing: 10px;
   }
-  
+
+  .caption-bottom span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+
   h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
-    color: #111;
+    /* color: #111; */
   }
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
-          background-attachment: scroll;
-      }
-  }
+
   .off-section {
     color:#ddd;
     background-color:#282E34;
@@ -66,7 +129,12 @@ body, html {
     padding:50px 80px;
     position:relative;
     font-size: 20px;
+    letter-spacing: 3px;
   }
+  
+  /*  */
+  
+  /* PORTFOLIO */
 
   .grid-style{
     background-color:#282E34;
@@ -76,8 +144,52 @@ body, html {
     width: 100%;
   }
 
-  .link-style{
+  .link-style {
     font: 30px "Lato", sans-serif;
-    color: rgb(231, 231, 163);
+    color: white;
     text-align: center;
   }
+
+  .link-style:hover {
+    text-shadow: 2px 2px 2px#000;
+    color:white;
+  }
+
+  .container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  max-height: 309px;
+  max-width: 600px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+/*  */
+
+
+
