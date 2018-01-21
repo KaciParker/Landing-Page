@@ -1,4 +1,4 @@
-body, html {
+/* body, html {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
@@ -10,51 +10,11 @@ body, html {
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
-  
-  /* BACKGROUND IMAGES */
-
-  /* .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-  .bgimg-1 {
-    background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?dpr=1&auto=format&fit=crop&w=1350&q=60&cs=tinysrgb");
-    min-height: 100%;
-  }
-
-  .img-bot {
-    min-height: 1000px;
-  }
-  
-  .bgimg-2 {
-    background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?dpr=1&auto=format&fit=crop&w=1050&q=60&cs=tinysrgb");
-    min-height: 400px;
-  }
-  
-  .bgimg-3 {
-    background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb");
-    min-height: 400px;
   } */
-
-  /*  */
   
   /* IN BETWEEN SECTIONS */
 
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-
+/*
   .caption-bottom {
     position: absolute;
     left: 0;
@@ -89,8 +49,8 @@ body, html {
     letter-spacing: 5px;
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
-    /* color: #111; */
-  }
+    color: #111;
+  } */
 
   .off-section {
     color:#ddd;
@@ -99,8 +59,8 @@ body, html {
     padding:50px 80px;
     position:relative;
     font-size: 20px;
-    letter-spacing: 3px;
-  }
+    letter-spacing: 5px;
+  } 
   
   /*  */
   
@@ -127,7 +87,7 @@ body, html {
 
   .container {
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 .image {
@@ -137,8 +97,7 @@ body, html {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  max-height: 309px;
-  max-width: 600px;
+  
 }
 
 .middle {
@@ -157,6 +116,13 @@ body, html {
 
 .container:hover .middle {
   opacity: 1;
+}
+
+.fs {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 10px;
+  font-size: 30px;
+  color: black;
 }
 
 /*  */

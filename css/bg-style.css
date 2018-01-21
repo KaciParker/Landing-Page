@@ -145,9 +145,11 @@ main {
 		color: #fff8de;
 		background-color: rgba(0,0,0,0.5);
 		padding: 10px 5px;
-		font-size: 35px;
+		font-size: 50px;
 		line-height: 38px;
-		margin-bottom: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 10px;
+        font-family: 'Merriweather', serif;
 	}
 	.hsContent p {
 		width: 400px;
@@ -200,6 +202,23 @@ main {
 		padding-right: 0;
 	}
 
+.profile-1 {
+    background: url(../img/Optimized-boards.png);
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.profile-2 {
+    background-image:url('../img/confer.png');
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.profile-3 {
+    background-image:url('../img/inspire.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -388,4 +407,5 @@ main {
     h3 {
         page-break-after: avoid;
     }
+
 }
