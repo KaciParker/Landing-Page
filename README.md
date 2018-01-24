@@ -1,2 +1,3 @@
 # Landing-Page
-Initial readme page
+Landing Page for Software Developer Kaci Parker. Contains link to portfolio as well as professional resume.
+
