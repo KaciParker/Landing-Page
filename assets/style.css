@@ -5,12 +5,12 @@ body, html {
     color: #777;
   }
 
-  .text {
+  /* .text {
     font: 20px "Lato", sans-serif;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
+  } */
   
   /* CIRCLE BUTTON */
 
@@ -67,11 +67,25 @@ body, html {
     min-height: 1000px;
   }
   
+  /* Small Screen */
+  @media screen and (max-width: 999px) {
   .bgimg-3 {
     background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb");
-    min-height: 1000px;
+    min-height: 700px;
+    transform: scale(1.1);
+    z-index: -1;
   }
+}
   
+  /* Large Screen  */
+  @media screen and (min-width: 1000px) {
+    .bgimg-3 {
+      background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb");
+      min-height: 1000px;
+      transform: scale(1.2);
+      z-index: -1;
+  }
+}
 
   /*  */
   
@@ -106,6 +120,7 @@ body, html {
     padding: 18px;
     font-size: 50px;
     letter-spacing: 10px;
+    transform: scale(1);
   }
 
   .caption-bottom span.border {
@@ -173,7 +188,7 @@ body, html {
     padding:50px 80px;
     position:relative;
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
   }
   
   /*  */
@@ -189,22 +204,34 @@ body, html {
 
   .link-style {
     font: 30px "Lato", sans-serif;
-    color: white;
     text-align: center;
+    text-shadow: 2px 2px 2px#000;
+    color:lightpink;
   }
 
   .link-style:hover {
-    text-shadow: 2px 2px 2px#000;
     color:white;
+    text-shadow: 4px 4px 2px#000;
   }
-
-
-  /* Hover Text */
+  
   /* Large Screens */
 @media screen and (min-width: 1000px) {
 .container {
     position: relative;
     width: 100%;
+}
+.text {
+  font: 20px "Lato", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text-no-pad {
+  font: 20px "Lato", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 .image {
@@ -226,11 +253,11 @@ body, html {
   -ms-transform: translate(-50%, -50%)
 }
 
-.container:hover .image {
+.container .image {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.container .middle {
   opacity: 1;
 }
 
@@ -255,7 +282,7 @@ body, html {
   border: 5px solid steelblue;
 }
 
-.container:hover .text-block{
+.container .text-block{
   display: none;
 }
 
@@ -289,9 +316,6 @@ body, html {
 }
 
 .rotate {
-/* width: 200px; */
-/* height: 100px; */
-/* background-color: yellow; */
 /* Rotate div */
 -ms-transform: rotate(12deg); /* IE 9 */
 -webkit-transform: rotate(12deg); /* Safari 3-8 */
@@ -302,56 +326,29 @@ transform: rotate(12deg);
 /* SMALL SCREENS */
   @media screen and (max-width: 999px) {
     .container {
-        /* position: relative; */
-        /* width: 100%; */
         color: black;
+    } 
+
+    .text {
+      font: 20px "Lato", sans-serif;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
     }
-    
-    /* .image {
-      opacity: 1;
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    } */
-    
-    /* .middle {
-      height: 100%;
-      width: 100%;
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%)
-    } */
-    
-    /* .container .image {
-      opacity: 0.3;
+
+    .text-no-pad {
+      font: 20px "Lato", sans-serif;
+      color: white;
+      font-size: 16px;
     }
-    
-    .container .middle {
-      opacity: 1;
-    } */
-    
-    /* .container2 {
-      position: relative;
-      font-family: Arial;
-    } */
-    
+
     .text-block {
     display: none;
     }
     
     thumbnail {
       margin-bottom: 0px;
-    }
-    /* .container .text-block{
-      display: none;
-    } */
-    
+    } 
     .logo{
       max-height: 50px;
       color: white;
@@ -364,37 +361,30 @@ transform: rotate(12deg);
     }
 
     .small-box {
-      border: 1px solid black;
+      border: 10px solid black;
       background-color: white;
       margin-bottom: 50px;
+      
     }
     
     .p-text {
       color: black;
       font: "Lato", sans-serif;
-      /* letter-spacing: 10px; */
-      /* text-shadow: 4px 4px 5px#000; */
+     
     }
     
     .h-text {
       font: "Lato", sans-serif;
-      /* letter-spacing: 10px; */
-      /* text-shadow: 2px 2px 2px#000; */
+    
       color: yellow;
       margin-bottom: 5px;
     }
-    
-    /* .rotate {
- 
-    -ms-transform: rotate(12deg);
-    -webkit-transform: rotate(12deg);
-    transform: rotate(12deg);
-    }  */
       }
 /*  */
 
 .a-pointer {
   cursor: pointer;
 }
+
 
 
