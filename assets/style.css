@@ -5,12 +5,12 @@ body, html {
     color: #777;
   }
 
-  .text {
+  /* .text {
     font: 20px "Lato", sans-serif;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
+  } */
   
   /* CIRCLE BUTTON */
 
@@ -59,18 +59,33 @@ body, html {
   }
 
   .img-bot {
-    min-height: 1000px;
+    min-height: 800px;
   }
   
   .bgimg-2 {
     background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?dpr=1&auto=format&fit=crop&w=1050&q=60&cs=tinysrgb");
-    min-height: 400px;
+    min-height: 1000px;
   }
   
+  /* Small Screen */
+  @media screen and (max-width: 999px) {
   .bgimg-3 {
     background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb");
-    min-height: 400px;
+    min-height: 700px;
+    transform: scale(1.1);
+    z-index: -1;
   }
+}
+  
+  /* Large Screen  */
+  @media screen and (min-width: 1000px) {
+    .bgimg-3 {
+      background-image: url("https://images.unsplash.com/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?dpr=1&auto=format&fit=crop&w=967&q=60&cs=tinysrgb");
+      min-height: 1000px;
+      transform: scale(1.2);
+      z-index: -1;
+  }
+}
 
   /*  */
   
@@ -105,6 +120,7 @@ body, html {
     padding: 18px;
     font-size: 50px;
     letter-spacing: 10px;
+    transform: scale(1);
   }
 
   .caption-bottom span.border {
@@ -114,6 +130,49 @@ body, html {
     font-size: 50px;
     letter-spacing: 10px;
   }
+
+  @media screen and (min-width: 851px) {
+    .sm-link {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+
+    .lg-link {
+      display: none;
+    }
+
+    .caption-bottom {
+      position: absolute;
+      left: 0;
+      top: 35%;
+      /* width: 100%; */
+      text-align: center;
+      color: #000;
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      /* font-size: 50px; */
+      /* letter-spacing: 10px; */
+    }
+  
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      /* font-size: 50px; */
+      /* letter-spacing: 10px; */
+    }
+  
+    .caption-bottom span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      /* font-size: 50px; */
+      /* letter-spacing: 10px; */
+    }
+  } 
 
   h3 {
     letter-spacing: 5px;
@@ -129,7 +188,7 @@ body, html {
     padding:50px 80px;
     position:relative;
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
   }
   
   /*  */
@@ -141,23 +200,38 @@ body, html {
     text-align:center;
     padding:50px 80px;
     position:relative;
-    width: 100%;
   }
 
   .link-style {
     font: 30px "Lato", sans-serif;
-    color: white;
     text-align: center;
+    text-shadow: 2px 2px 2px#000;
+    color:lightpink;
   }
 
   .link-style:hover {
-    text-shadow: 2px 2px 2px#000;
     color:white;
+    text-shadow: 4px 4px 2px#000;
   }
-
-  .container {
+  
+  /* Large Screens */
+@media screen and (min-width: 1000px) {
+.container {
     position: relative;
-    width: 50%;
+    width: 100%;
+}
+.text {
+  font: 20px "Lato", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text-no-pad {
+  font: 20px "Lato", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 .image {
@@ -167,8 +241,6 @@ body, html {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  max-height: 309px;
-  max-width: 600px;
 }
 
 .middle {
@@ -181,15 +253,138 @@ body, html {
   -ms-transform: translate(-50%, -50%)
 }
 
-.container:hover .image {
+.container .image {
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.container .middle {
   opacity: 1;
 }
 
+.container2 {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  left: 140px;
+  margin-top: 80px;
+  background-color: #337ab785;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  border: 5px solid steelblue;
+}
+
+.container .text-block{
+  display: none;
+}
+
+.logo{
+  height: 50px;
+  /* margin-top: 20px; */
+  color: white;
+  margin-bottom: 10px;
+}
+
+.well {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+  border-radius: 0;
+}
+
+.p-text {
+  font: "Lato", sans-serif;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 5px#000;
+}
+
+.h-text {
+  font: "Lato", sans-serif;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 2px#000;
+  color: yellow;
+  margin-bottom: 5px;
+}
+
+.rotate {
+/* Rotate div */
+-ms-transform: rotate(12deg); /* IE 9 */
+-webkit-transform: rotate(12deg); /* Safari 3-8 */
+transform: rotate(12deg);
+}
+  }
+
+/* SMALL SCREENS */
+  @media screen and (max-width: 999px) {
+    .container {
+        color: black;
+    } 
+
+    .text {
+      font: 20px "Lato", sans-serif;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+    .text-no-pad {
+      font: 20px "Lato", sans-serif;
+      color: white;
+      font-size: 16px;
+    }
+
+    .text-block {
+    display: none;
+    }
+    
+    thumbnail {
+      margin-bottom: 0px;
+    } 
+    .logo{
+      max-height: 50px;
+      color: white;
+      margin-bottom: 10px;
+    }
+    
+    .well {
+      background-color: black;
+      border-radius: 0;
+    }
+
+    .small-box {
+      border: 10px solid black;
+      background-color: white;
+      margin-bottom: 50px;
+      
+    }
+    
+    .p-text {
+      color: black;
+      font: "Lato", sans-serif;
+     
+    }
+    
+    .h-text {
+      font: "Lato", sans-serif;
+    
+      color: yellow;
+      margin-bottom: 5px;
+    }
+      }
 /*  */
+
+.a-pointer {
+  cursor: pointer;
+}
 
 
 
